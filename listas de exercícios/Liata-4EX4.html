@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>EX4</title>
+</head>
+
+<body>
+
+    <h2>Descubra o valor devido pelo cliente</h2>
+    <script>
+
+        var codigo = (prompt("Digite o código do produto")); 
+
+        var quantidade = parseInt(prompt("Digite a quantidade comprada pelo cliente")); 
+
+        if (codigo != ABCD && codigo != XYPK && codigo != KLMP && codigo != QRST ){
+        
+        prompt("Você digitou o código errado");
+        }
+
+        document.write(`O código do produto é: ${codigo} <br>`);
+        document.write(`A quantidade comprada é: ${quantidade} <br>`);
+
+        if (codigo == "ABCD" ){
+        var resultado = quantidade * 5.30;
+        document.write(`O resultado da dívida é: ${resultado} <br>`);
+    }
+        else if (codigo == "XYPK" ){
+        var resultado = quantidade * 6;
+        document.write(`O resultado da dívida é: ${resultado} <br>`);
+    }
+        else if (codigo == "KLMP" ){
+        var resultado = quantidade * 3.20;
+        document.write(`O resultado da dívida é: ${resultado} <br>`);
+    }
+        else {
+        var resultado = quantidade * 2.50;
+        document.write(`O resultado da dívida é: ${resultado} <br>`);
+    }
+    
+
+
+    </script>
+
+</body>

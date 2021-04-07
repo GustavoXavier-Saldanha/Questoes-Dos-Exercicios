@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>veja seu salário</title>
+</head>
+<body>
+    <h2>Veja seu salário</h2>
+    <script>
+        var salario = parseFloat(prompt("digite seu salário fixo"));
+        var vendas = parseInt(prompt("digite o número de vendas realizadas no mês"));
+        
+        var comissao = vendas * 0.04;
+        var total = comissao + salario ;
+
+        document.write(`O valor de comissão adicionado ao seu salário é: R$${comissao.toFixed(2)}<br>`);
+        document.write(`O seu salário total é: R$${total.toFixed(2)}`);
+
+    </script>
+    
+</body>
+</html>

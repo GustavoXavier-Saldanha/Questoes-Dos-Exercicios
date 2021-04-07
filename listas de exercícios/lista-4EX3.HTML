@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>contador</title>
+</head>
+
+<body>
+
+    <h2>Descubra o fatorial</h2>
+    <script>
+
+
+        var fatorial = parseInt(prompt("Digite o número para ser fazer o fatorial"));
+        var contador = 0
+
+        while (contador <= fatorial) {
+
+            var calculo = (fatorial * contador);
+
+            document.write(`${fatorial}! = ${calculo} <br><br>`);
+
+            contador++;
+        }
+
+        var resultado = fatorial;
+        for (var i = 1; i < fatorial; i++) {
+            resultado *= i;
+        }
+
+
+        document.write(`O resultado da soma é: ${resultado} <br>`);
+
+    </script>
+
+</body>
+
+</html>
