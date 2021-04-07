@@ -7,8 +7,6 @@ pessoa.push({nome:nome, idadede:idade, sexo:sexo});
 
 document.write(`Nome: ${nome}.<br> Idade: ${idade}. <br> Sexo: ${sexo}<br><br><br>`);
 
-//for (var i = 1; i <= 5; i++)
-
     let mudanca = prompt("você deseja mudar de nome? (sim/não)");
 while(contador <= 4)
 
