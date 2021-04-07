@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMPOSTO DE RENDA</title>
+</head>
+<body>
+    <h1 style="color:rgb(18, 116, 5);"><center>Imposto de renda</center></h1>
+
+    <script>
+
+        var salario1 = parseFloat(prompt("Digite seu salário)"));
+        document.write(`<center>O valor bruto é ${salario1}</center><br>`);
+
+        var dependente = parseInt(prompt("Digite quantos dependentes você tem)"))
+        document.write(`<center>Você tem ${dependente} dependentes</center><br>`);
+
+
+            if(salario1 <= 1903.98){
+                var dependentes2 = dependente * 182;
+                var salario2 = salario1 - dependentes2;
+                document.write(`<center>Seu salário líquido é de R$${salario2.toFixed(2)}.você não receberá nenhum decrécimo do imposto em seu salário.</center><br>`);}
+
+                else if (salario1 <= 2826.65 && salario1 >= 1903.99 ){
+
+                    var dependentes2 = dependente * 189.59;
+                    var salario2 = salario1 - dependentes2;
+                    var salario3 = salario2*0.925;
+                    var imposto = salario2 - salario3;
+
+                    document.write(`<center>Seu salário líquido é de R$${salario3.toFixed(2)}.<br> O valor a ser pago ao governo é de R$${imposto.toFixed(2)}</center>`);}
+
+                    else if (salario1 <= 3751.05 && salario1 >= 2826.66){
+
+                    var dependentes2 = dependente * 189.59;
+                    var salario2 = salario1 - dependentes2;
+                    var salario3 = salario2*0.85;
+                    var imposto = salario2 - salario3;
+
+                    document.write(`<center>Seu salário líquido é de R$${salario3.toFixed(2)}<br> O valor a ser pago ao governo é de R$${imposto.toFixed(2)}</center>`);}
+                    
+                    else if (salario1 <= 4664.68 && salario1 >= 3751.06){
+
+                    var dependentes2 = dependente * 189.59;
+                    var salario2 = salario1 - dependentes2;
+                    var salario3 = salario2*0.775;
+                    var imposto = salario2 - salario3;
+
+                    document.write(`<center>Seu salário líquido é de R$${salario3.toFixed(2)}.<br> O valor a ser pago ao governo é de R$${imposto.toFixed(2)}</center>`);}
+                    
+                    else{
+
+                    var dependentes2 = dependente * 189.59;
+                    var salario2 = salario1 - dependentes2;
+                    var salario3 = salario2*0.725;
+                    var imposto = salario2 - salario3;
+
+                    document.write(`<center>Seu salário líquido é de R$${salario3.toFixed(2)}.<br> O valor a ser pago ao governo é de R$${imposto.toFixed(2)}</center>`);}
+
+
+
+    </script>
+</body>
+</html>

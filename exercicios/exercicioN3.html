@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubra o seu IMC</title>
+</head>
+<body>
+
+    <h1>Descubra o seu IMC</h1>
+
+     <script>
+
+            var nome = prompt("Digite o seu nome");
+            var peso = parseFloat(prompt("Digite o seu peso"));
+            var altura = parseFloat(prompt("Digite a sua altura"));
+            var idade = parseFloat(prompt("Digite a sua idade"));
+            var sexo = prompt("Digite o seu sexo");
+
+      
+
+            document.write(`<h4>${nome}</h4>`);
+            document.write(`<h4>Seu peso: ${peso}</h4>`);
+            document.write(`<h4>sua altura: ${altura}</h4>`);
+            document.write(`<h4>sua idade: ${idade}</h4>`);
+            document.write(`<h4>seu sexo: ${sexo} </h4><br>`);
+
+            var imc = peso/(altura*altura)
+
+            if(imc<=18.5){
+
+                document.write(`Seu IMC é ${imc.toFixed(2)}. <br>Você está abaixo do peso.`);}
+
+                    else if (imc > 18.5 && imc <=24.9){
+
+                        document.write(`Seu IMC é ${imc.toFixed(2)} <br>Você está com o peso normal, parabéns!!`);
+                    }
+
+                    else if (imc > 25 && imc <= 29.9){
+
+                    document.write(`Seu IMC é ${imc.toFixed(2)}<br>Você está com sobrepeso.`);}
+
+                    else if (imc > 29.9 && imc <= 34.9){
+
+                    document.write(`Seu IMC é ${imc.toFixed(2)}<br>Você está com a obesidade de gruau 1.`);}
+                   
+                    else if (imc > 34.9 && imc <= 40){
+
+                    document.write(`Seu IMC é ${imc.toFixed(2)}<br>Você está com a obesidade de gruau 2. É melhor se cuidar`);}
+                    
+                    else{
+                        document.write(`Seu IMC é ${imc.toFixed(2)}<br>Você está com a obesidade de gruau 3(mórbida). Procure ajuda médica`);  
+                    }
+
+
+     </script>
+</body>
+</html>
